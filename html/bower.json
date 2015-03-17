@@ -1,0 +1,16 @@
+{
+  "name": "liguwe.com's source html",
+  "version": "0.0.0",
+  "homepage": "https://github.com/liguwe/liguwe.com",
+  "authors": [
+    "liguangwei <liguangwei@cri.cn>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
