@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/.bowerrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/staticPage/README.md" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/code.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/content.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/note.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/staticPage/text.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test/evernote.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
 </project>
