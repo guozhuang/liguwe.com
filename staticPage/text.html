@@ -1,0 +1,143 @@
+基因格式：
+<parser>
+    <urlPattern></urlPattern>
+    <titlePath></titlePath>
+    <bodyPath></bodyPath>
+    <excludeBodyPath>optional, parts in body not wanted</excludeBodyPath>
+    <tagSeparater>optional, default is ","</tagSeparater>
+    <enablePaging>optional, default false</enablePaging>
+    <pagerPattern>optional, available when enablePaging</pagerPattern>
+    <maxPagePattern>optional, available when enablePaging,
+        default same with urlpattern, be careful when use default
+        because urlpattern may more loose, thus u may get wrong
+        max page
+    </maxPagePattern>
+    <source></source>
+    <publishTime></publishTime>
+</parser>
+
+<!--=================================================-->
+http://gb.cri.cn/42071/2015/05/12/5311s4960174.htm
+图集分页
+http://gb.cri.cn/42071/2015/05/13/7551s4960894.htm      ---------------1
+http://gb.cri.cn/42071/2015/05/13/7551s4960894_1.htm    ---------------2
+未分页：
+<parser>
+    <urlPattern>http://gb.cri.cn/\d+/\d{4}/\d{2}/\d{2}/(.*).htm</urlPattern>
+    <titlePath>//*[contains(@class, 'news_ts_tit')]</titlePath>
+    <bodyPath>//*[@id='ccontent']</bodyPath>
+    <enablePaging>true</enablePaging>
+    <pagerPattern>_{0}</pagerPattern>
+    <source>国际在线</source>
+    <publishTime>//*[@id='pubtime_baidu']</publishTime>
+</parser>
+
+分页：
+<parser>
+    <urlPattern>http://gb.cri.cn/\d+/\d{4}/\d{2}/\d{2}/(.*)(_(?&lt;page&gt;\d+))?.htm</urlPattern>
+    <titlePath>//*[contains(@class, 'news_ts_tit')]</titlePath>
+    <bodyPath>//*[@id='ccontent']</bodyPath>
+    <enablePaging>true</enablePaging>
+    <pagerPattern>_{0}</pagerPattern>
+    <maxPagePattern>&lt;center&gt;.*?&lt;a.*?&gt;(?&lt;page&gt;\d+)&lt;/a&gt;\s*?&lt;/center&gt;</maxPagePattern>
+    <source>国际在线</source>
+    <publishTime>//*[@id='pubtime_baidu']</publishTime>
+</parser>
+<!--=================================================-->
+网易新闻：
+http://news.163.com/15/0513/12/APGCM2R400011229.html
+
+未分页：
+<parser>
+    <urlPattern>http://news.163.com/\d{2}/\d{4}/\d{2}/\S*.html</urlPattern>
+    <titlePath>//*[@id='h1title'][contains(@class,'ep-h1')]</titlePath>
+    <bodyPath>//*[@id='endText'][contains(@class,'end-text')]</bodyPath>
+    <enablePaging>false</enablePaging>
+    <source>网易新闻</source>
+    <publishTime>//*[contains(@class,'ep-time-soure')]</publishTime>
+</parser>
+
+
+<!--=====================娱乐============================-->
+http://slide.ent.sina.com.cn/film/slide_4_704_105134.html#p=1
+
+<parser>
+    <urlPattern>http://slide.ent.sina.com.cn/film/\w*.html(#p1=\d*)?</urlPattern>
+    <titlePath>//*[contains(@class,'swp-tit')]</titlePath>
+    <bodyPath>//div[contains(@class,'part-a')]</bodyPath>
+    <maxPagePattern></maxPagePattern>
+    <source>新浪娱乐</source>
+    <publishTime>//*[contains(@class,'swpt-time')]</publishTime>
+</parser>
+
+
+http://ent.ifeng.com/a/20150326/42352672_0.shtml
+
+<parser>
+    <urlPattern>http://ent.ifeng.com/a/\d{8}/\d*(_\d+)?.shtml</urlPattern>
+    <titlePath>//*[@id='artical_topic']</titlePath>
+    <bodyPath>//*[@id='artical_real']</bodyPath>
+    <enablePaging>true</enablePaging>
+    <pagerPattern>_{0}</pagerPattern>
+    <maxPagePattern></maxPagePattern>
+    <source>凤凰娱乐</source>
+    <publishTime>//span[contains(@class,'ss01')]</publishTime>
+</parser>
+
+
+
+http://ent.163.com/15/0327/01/ALM7NU3O00031H2L.html#p=ALM7JTVU00AJ0003
+<parser>
+    <urlPattern>http://ent.163.com/\d{2}/\d{4}/\d{2}/\w*.html(#p=\w*)?</urlPattern>
+    <titlePath>//*[@id='h1title']</titlePath>
+    <bodyPath>//*[@id='ccontent']</bodyPath>
+    <enablePaging>true</enablePaging>
+    <pagerPattern>_{0}</pagerPattern>
+    <maxPagePattern>&lt;center&gt;.*?&lt;a.*?&gt;(?&lt;page&gt;\d+)&lt;/a&gt;\s*?&lt;/center&gt;</maxPagePattern>
+    <source>国际在线</source>
+    <publishTime>//*[@id='pubtime_baidu']</publishTime>
+</parser>
+
+
+
+
+
+ <!-- =======================================-->
+<parser>
+    <urlPattern>http://news.china.com/social/\d+/\d{8}/\d+(_(?&lt;page&gt;\d+))?.html</urlPattern>
+    <titlePath>//*[@id="chan_newsTitle"]</titlePath>
+    <bodyPath>//*[@id="chan_newsDetail"]</bodyPath>
+    <excludeBodyPath>//*[contains(@class, "adclass")]</excludeBodyPath>
+    <enablePaging>true</enablePaging>
+    <pagerPattern>_{0}</pagerPattern>
+    <maxPagePattern>&lt;span.*class="sumPage"&gt;.*?&lt;cite&gt;(?&lt;page&gt;\d+)&lt;/cite&gt;.*?&lt;/span&gt;</maxPagePattern>
+    <source>中华网</source>
+    <publishTime>//*[@id="chan_newsInfo"]</publishTime>
+</parser>
+
+
+<!--=====================================-->
+http://ent.people.com.cn/n/2015/0313/c1012-26690542.html
+<parser>
+    <urlPattern>http://news.china.com/social/\d+/\d{8}/\d+(_(?&lt;page&gt;\d+))?.html</urlPattern>
+    <titlePath>//*[@id="chan_newsTitle"]</titlePath>
+    <bodyPath>//*[@id="chan_newsDetail"]</bodyPath>
+    <excludeBodyPath>//*[contains(@class, "adclass")]</excludeBodyPath>
+    <enablePaging>true</enablePaging>
+    <pagerPattern>_{0}</pagerPattern>
+    <maxPagePattern>&lt;span.*class="sumPage"&gt;.*?&lt;cite&gt;(?&lt;page&gt;\d+)&lt;/cite&gt;.*?&lt;/span&gt;</maxPagePattern>
+    <source>中华网</source>
+    <publishTime>//*[@id="chan_newsInfo"]</publishTime>
+</parser>
+
+<!---->
+
+
+
+
+
+
+
+
+
+

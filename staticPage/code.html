@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor demo</title>
+    <script src="js/run_prettify.js"></script>
+</head>
+
+<body>
+<pre class="prettyprint linenums">
+    $("#books ul li").hover(function(){
+        $(this).addClass("hoverGreen");
+        $(this).find("a").css({"color":"white"});
+    },function(){
+        $(this).removeClass("hoverGreen");
+        $(this).find("a").css({"color":"#4a4a4a"});
+    })
+</pre>
+</body>
+
+</html>

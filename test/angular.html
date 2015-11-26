@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-app="myapp">
+
+
+<div class="noteBookList" ng-controller="mycontroller">
+    <ul class="">
+        <li ng-repeat="data in datas">
+            <a  ng-if="!data.stack" ng-if="data" href="#">{{data.book.name}}</a>
+            <a target="" ng-if="data.stack" href="#">{{data.stack}}</a>
+            <ul ng-if="data.stack">
+                <li ng-repeat="book in data.books">
+                    <a href="#">{{book.name}}</a>
+                </li>
+            </ul>
+        </li>
+        <!--<li ng-repeat="data in datas" ng-if="data.stack">-->
+            <!--<a ng-if="data" href="#">{{data.stack}}</a>-->
+            <!--<ul>-->
+                <!--<li ng-repeat="book in data.books">-->
+                    <!--<a href="#">{{book.name}}</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+    <!--</ul>-->
+</div>
+
+
+<script src="../public/lib/angular/angular.js"></script>
+<script>
+    angular.module('myapp', [])
+            .controller('mycontroller', function ($scope) {
+                $scope.datas = [
+                    {
+                        stack: null,
+                        "book": {
+                            "_id": "564de94f533ff1b0371d005f",
+                            "guid": "b3f65fdd-3091-407f-af23-84fd44895955",
+                            "name": "html",
+                            "serviceCreated": 1447919476000,
+                            "serviceUpdated": 1447919476000,
+                            "stack": null
+                        }
+                    },
+                    {
+                        stack: "笔记本组1",
+                        books: [
+                            {
+                                "_id": "56500408b0075d781560d974",
+                                "guid": "5e6f1aeb-9138-4ca0-a114-661dccccbee0",
+                                "name": "我的第一个笔记本",
+                                "serviceCreated": 1437369860000,
+                                "serviceUpdated": 1447552609000,
+                                "stack": "笔记本组1"
+                            },
+                            {
+                                "_id": "56500408b0075d781560d975",
+                                "guid": "677bc2f6-320c-4ee6-8248-cbed9c150a3e",
+                                "name": "我的第二个笔记本",
+                                "serviceCreated": 1447551491000,
+                                "serviceUpdated": 1447552630000,
+                                "stack": "笔记本组1"
+                            }
+                        ]
+                    },
+                    {
+                        stack: "笔记本组1",
+                        books: [
+                            {
+                                "_id": "56500408b0075d781560d974",
+                                "guid": "5e6f1aeb-9138-4ca0-a114-661dccccbee0",
+                                "name": "我的第一个笔记本",
+                                "serviceCreated": 1437369860000,
+                                "serviceUpdated": 1447552609000,
+                                "stack": "笔记本组1"
+                            },
+                            {
+                                "_id": "56500408b0075d781560d975",
+                                "guid": "677bc2f6-320c-4ee6-8248-cbed9c150a3e",
+                                "name": "我的第二个笔记本",
+                                "serviceCreated": 1447551491000,
+                                "serviceUpdated": 1447552630000,
+                                "stack": "笔记本组1"
+                            }
+                        ]
+                    },
+                    {
+                        stack: null,
+                        "book": {
+                            "_id": "564de94f533ff1b0371d005f",
+                            "guid": "b3f65fdd-3091-407f-af23-84fd44895955",
+                            "name": "html2",
+                            "serviceCreated": 1447919476000,
+                            "serviceUpdated": 1447919476000,
+                            "stack": null
+                        }
+                    },
+                ]
+
+            })
+
+</script>
+</body>
+</html>

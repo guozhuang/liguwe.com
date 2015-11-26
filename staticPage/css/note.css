@@ -1,0 +1,325 @@
+/*common*/
+*{
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.ml10{
+    margin-left: 15px;
+}
+.mlr10{
+    margin-left: 10px;
+    margin-right:10px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.hide{
+    display: none;
+}
+ul,ul li{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.fl{
+    float: left;
+}
+a,span,div,p,i{
+    font-family: caecilia, times, serif;
+}
+
+/*#booksAndNotes*/
+/*============================================================================================*/
+#booksAndNotes{
+    position: fixed;
+    width:24%;
+    border-right:1px solid #d3d8db;
+}
+
+.searchAndAdd{
+    border-bottom:1px solid #d3d8db;
+    top:0;
+    width: 100%;
+}
+
+.icons{
+    height: 30px;
+    margin:12px 0 18px 20px;
+}
+
+.icons .fa{
+    margin-right: 18px;
+    padding-top:4px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #878787;
+}
+.icons .fa-file-text:before{
+    font-size: 16px;
+}
+.icons .fa-home:before{
+    font-size: 21px;
+}
+.icons .fa-book:before{
+    font-size: 18px;
+}
+.icons .fa-plus:before{
+    font-size: 20px;
+}
+.icons .fa-plus{
+    float: right;
+    padding-top:7px;
+    margin-right: 15px;
+}
+.icons .fa:hover{
+    color:#36BD64;
+}
+
+
+.inputText{
+    margin:15px auto;
+    height: 50px;
+    width: 94%;
+    overflow: hidden;
+    position: relative;
+    /*color: #ababab;*/
+    color: #878787;
+}
+.inputText div{
+    text-align: center;
+    position: absolute;
+    top: 6px;
+    left: 100px;
+    font-family: serif;
+    font-size: 16px;
+}
+.defaultSearch i:before{
+    font-size: 14px;
+}
+.inputText input{
+    width: 100%;
+    display: inline-block;
+    padding: 8px 10px;
+    margin: auto;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #878787;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+
+
+#booksAndNotes .bookList,#booksAndNotes .noteList{
+    width:100%;
+    height:100%;
+    /*margin:10px auto;*/
+    overflow: auto;
+}
+
+
+
+#booksAndNotes ul li{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*border-bottom:1px solid #ececec;*/
+    border-bottom:1px solid #e1e6e9;
+    /*border-radius: 5px;*/
+    position: relative;
+}
+
+.hoverGreen{
+    background-color: #3EBB6B;
+    /*border-radius: 5px;*/
+}
+
+#booksAndNotes .bookTitle,#booksAndNotes .noteTitle{
+    display: inline-block;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 14px;
+    transition: color 0.1s ease-in-out;
+    float: left;
+    margin: 17px 0 12px 16px;
+    width: 83%;
+    overflow: hidden;
+    word-wrap:break-word;
+    white-space: nowrap;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    height: 18px;
+    font-weight: 300;
+}
+
+
+.edit,.delete{
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 16px;
+    color: white;
+    width: 6%;
+}
+
+.edit:hover,.delete:hover{
+    font-size:20px;
+}
+
+
+.editCon{
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    left:25%;
+}
+
+.editCon>div{
+    padding-top:4px;
+    float:left;
+    width: 35px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    border-top: 1px solid #C6C6C6;
+    background-color: white;
+
+}
+.editCon>div:first-child{
+    border-left: 1px solid #C6C6C6;
+}
+.editCon>div.unfold{
+    width: 33px;
+    padding-left: 7px;
+    padding-right: 4px;
+}
+.editCon>div.unfold:before{
+    /*content: " ";*/
+}
+.editCon>div.unfold>div{
+    background-color: white;
+    width: 78px;
+    margin-top: 5px;
+    margin-left: -8px;
+    /*border: 1px solid #C6C6C6;*/
+    height: 0;
+    overflow: hidden;
+}
+
+.unfold>div>a{
+    background-color: white;
+    font-size: 12px;
+    color: black;
+    width: 80px;
+    display: inline-block;
+    padding: 5px 0;
+    border-right: 1px solid #C6C6C6;
+    border-left: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+}
+.unfold>div>a:first-child{
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+}
+.unfold>div.notColor>a:hover{
+    font-weight:bold;
+    background-color: #E6E6E6;
+    color: #2DBE60;
+}
+.editCon>div.unfold>div.color {
+    width: 100px;
+    margin-left: -39px;
+    /* border: 1px solid #C6C6C6; */
+    /* padding-bottom: 3px; */
+    /* padding-top: 6px; */
+    padding-left: 6px;
+    text-align: left;
+}
+
+
+.editCon>div.unfold div.color>a{
+    width: 15px;
+    height: 5px;
+    border: 0;
+    text-align: left;
+
+}
+.color .black{
+    background-color: black;
+}
+.color .red{
+    background-color: red;
+}
+.color .pink{
+    background-color: deeppink;
+}
+.color .blue{
+    background-color: blue;
+}
+.color .green{
+    background-color: lime;
+}
+
+.editCon>div:hover{
+    background-color: #E6E6E6;
+}
+.editCon>div>a{
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 600;
+}
+.editCon>div:hover>a{
+    color: #2DBE60;
+    font-size: 14px;
+}
+.fa-chevron-down{
+    font-size: 5px;
+}
+
+.editCon>div:hover>div{
+    overflow: visible;
+}
+.editCon>div:hover>.color {
+    border: 1px solid #C6C6C6;
+    padding-bottom: 2px;
+    padding-top: 5px;
+    height: auto;
+}
+
+
+
+/*=====================contentIframe=================================*/
+
+article#articles{
+    position: fixed;
+    left:24%;
+    height:100%;
+    overflow: auto;
+}
+
+#editcontent{
+    margin: 10px 0 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

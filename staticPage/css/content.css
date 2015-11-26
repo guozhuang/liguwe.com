@@ -1,0 +1,15 @@
+body {
+  background-color: #000;
+}
+.hide {
+  display: none;
+}
+.content {
+  width: 60%;
+  background-color: #fff;
+  height: 800px;
+  margin: auto;
+}
+.index i {
+  color: #fff;
+}

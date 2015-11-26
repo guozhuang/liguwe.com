@@ -1,0 +1,55 @@
+[
+  {
+    "stack": null,
+    "book": {
+      "_id": "5651372c5ae323440ecf7e42",
+      "guid": "349b7851-a5ed-4e6e-965a-596072836162",
+      "name": "abc",
+      "serviceCreated": 1448162808000,
+      "serviceUpdated": 1448162808000,
+      "stack": null
+    }
+  },
+  {
+    "stack": "笔记本组2",
+    "books": [
+      {
+        "_id": "5651372c5ae323440ecf7e41",
+        "guid": "b3f65fdd-3091-407f-af23-84fd44895955",
+        "name": "html",
+        "serviceCreated": 1447919476000,
+        "serviceUpdated": 1448162930000,
+        "stack": "笔记本组2"
+      },
+      {
+        "_id": "5651372c5ae323440ecf7e41",
+        "guid": "b3f65fdd-3091-407f-af23-84fd44895955",
+        "name": "html",
+        "serviceCreated": 1447919476000,
+        "serviceUpdated": 1448162930000,
+        "stack": "笔记本组2"
+      }
+    ]
+  },
+  {
+    "stack": "笔记本组1",
+    "books": [
+      {
+        "_id": "5651372c5ae323440ecf7e3f",
+        "guid": "5e6f1aeb-9138-4ca0-a114-661dccccbee0",
+        "name": "我的第一个笔记本",
+        "serviceCreated": 1437369860000,
+        "serviceUpdated": 1447552609000,
+        "stack": "笔记本组1"
+      },
+      {
+        "_id": "5651372c5ae323440ecf7e3f",
+        "guid": "5e6f1aeb-9138-4ca0-a114-661dccccbee0",
+        "name": "我的第一个笔记本",
+        "serviceCreated": 1437369860000,
+        "serviceUpdated": 1447552609000,
+        "stack": "笔记本组1"
+      }
+    ]
+  }
+]

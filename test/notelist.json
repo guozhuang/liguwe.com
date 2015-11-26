@@ -1,0 +1,37 @@
+{
+  "startIndex": 0,
+  "totalNotes": 2,
+  "notes": [
+    {
+      "guid": "d65d35c8-afb8-4e1b-a3f7-b7fdf24d9c77",
+      "title": null,
+      "contentLength": null,
+      "created": null,
+      "updated": null,
+      "deleted": null,
+      "updateSequenceNum": null,
+      "notebookGuid": null,
+      "tagGuids": null,
+      "attributes": null,
+      "largestResourceMime": null,
+      "largestResourceSize": null
+    },
+    {
+      "guid": "7978445e-d2bc-4739-a278-9e3f733d1b28",
+      "title": null,
+      "contentLength": null,
+      "created": null,
+      "updated": null,
+      "deleted": null,
+      "updateSequenceNum": null,
+      "notebookGuid": null,
+      "tagGuids": null,
+      "attributes": null,
+      "largestResourceMime": null,
+      "largestResourceSize": null
+    }
+  ],
+  "stoppedWords": null,
+  "searchedWords": null,
+  "updateCount": 116
+}

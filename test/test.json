@@ -1,0 +1,522 @@
+[
+  {
+    "stack": null,
+    "book": {
+      "_id": "565418dd60292d0839b99f6d",
+      "guid": "c97457c4-f57e-44d4-878f-6a704f5357a4",
+      "name": "About me",
+      "serviceCreated": 1448244381000,
+      "serviceUpdated": 1448244381000,
+      "stack": null
+    }
+  },
+  {
+    "stack": "Angular",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f3f",
+        "guid": "9d9d12b1-137e-4e70-8de4-6028adf34102",
+        "name": "AngularJS权威教程",
+        "serviceCreated": 1442139088000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Angular"
+      },
+      {
+        "_id": "565418dd60292d0839b99f4a",
+        "guid": "19b4f0c9-1082-4631-8ded-988bf3baee29",
+        "name": "用AngularJs开发下一代web应用",
+        "serviceCreated": 1442407419000,
+        "serviceUpdated": 1448025837000,
+        "stack": "Angular"
+      }
+    ]
+  },
+  {
+    "stack": "Javascript",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f38",
+        "guid": "71a8fa98-c8a1-433b-bb7d-292364fe00ef",
+        "name": "BOM",
+        "serviceCreated": 1425692846000,
+        "serviceUpdated": 1448334718000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f66",
+        "guid": "54ecec5f-e0fb-4174-86cc-ce11f53819b5",
+        "name": "Core Object",
+        "serviceCreated": 1432738205000,
+        "serviceUpdated": 1448334716000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f43",
+        "guid": "84f836d2-89ba-4b44-b68d-3b3e5f13bb4a",
+        "name": "DOM",
+        "serviceCreated": 1425692846000,
+        "serviceUpdated": 1448334715000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f3c",
+        "guid": "ff76636e-aafe-4090-8629-0897269ec0da",
+        "name": "DOM HTML",
+        "serviceCreated": 1437634674000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f5c",
+        "guid": "9278e385-b1c1-450d-86c7-483b8da8a284",
+        "name": "DOM Node",
+        "serviceCreated": 1437533237000,
+        "serviceUpdated": 1448334717000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f3b",
+        "guid": "48abe381-b0bc-4e75-98eb-1a5d4464f9f9",
+        "name": "ES6",
+        "serviceCreated": 1435386296000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f67",
+        "guid": "951a3cc0-87c5-49fa-8c63-179f79833fdf",
+        "name": "Event",
+        "serviceCreated": 1437533888000,
+        "serviceUpdated": 1447909737000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f52",
+        "guid": "d63f4295-e5e5-430d-a9d6-ef2c955ebf58",
+        "name": "Function",
+        "serviceCreated": 1437635436000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f58",
+        "guid": "83202628-59d7-407c-9898-c9800d4a5273",
+        "name": "JS Core Syntax",
+        "serviceCreated": 1425690537000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f6c",
+        "guid": "bcc16e38-a4be-4519-a46b-476ceb36aea4",
+        "name": "Javascript兼容篇",
+        "serviceCreated": 1447907431000,
+        "serviceUpdated": 1447910511000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f5d",
+        "guid": "2caf333e-9abd-49e9-8aae-760d2acba2f5",
+        "name": "Object-Oriented",
+        "serviceCreated": 1437635748000,
+        "serviceUpdated": 1448334715000,
+        "stack": "Javascript"
+      },
+      {
+        "_id": "565418dd60292d0839b99f5b",
+        "guid": "c4b3751b-62f4-4da7-9296-17fd330bb531",
+        "name": "Scripted HTTP",
+        "serviceCreated": 1432622003000,
+        "serviceUpdated": 1447910102000,
+        "stack": "Javascript"
+      }
+    ]
+  },
+  {
+    "stack": "Js Tools",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f4e",
+        "guid": "990baaa9-d5ad-48ba-b403-63c3ca9659cf",
+        "name": "Chrome Debugger",
+        "serviceCreated": 1425694538000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Js Tools"
+      },
+      {
+        "_id": "565418dd60292d0839b99f53",
+        "guid": "0f06ed2c-3ca7-4b8b-b2ee-512c66593b78",
+        "name": "Gulp&Grunt",
+        "serviceCreated": 1438657371000,
+        "serviceUpdated": 1447907210000,
+        "stack": "Js Tools"
+      },
+      {
+        "_id": "565418dd60292d0839b99f56",
+        "guid": "f7db0300-643e-4c55-bfc5-20a614cb81ba",
+        "name": "javascript tools",
+        "serviceCreated": 1447907210000,
+        "serviceUpdated": 1447907210000,
+        "stack": "Js Tools"
+      },
+      {
+        "_id": "565418dd60292d0839b99f44",
+        "guid": "0cf58ff6-e7ce-4c46-a2b5-e081407b7878",
+        "name": "js tools",
+        "serviceCreated": 1427071508000,
+        "serviceUpdated": 1447907431000,
+        "stack": "Js Tools"
+      },
+      {
+        "_id": "565418dd60292d0839b99f61",
+        "guid": "2b1f92b8-e8b0-4274-83ab-cf7f512a3b42",
+        "name": "require.js",
+        "serviceCreated": 1447907210000,
+        "serviceUpdated": 1447907210000,
+        "stack": "Js Tools"
+      },
+      {
+        "_id": "565418dd60292d0839b99f50",
+        "guid": "0eeea142-b6c8-413c-b54a-a382a9735fac",
+        "name": "webpack",
+        "serviceCreated": 1432265270000,
+        "serviceUpdated": 1448334715000,
+        "stack": "Js Tools"
+      }
+    ]
+  },
+  {
+    "stack": "Node.js",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f69",
+        "guid": "4302816f-4e8a-46ae-ad86-1f81ef72d262",
+        "name": "Express",
+        "serviceCreated": 1440061697000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Node.js"
+      },
+      {
+        "_id": "565418dd60292d0839b99f5e",
+        "guid": "1f570c1e-ebc7-48ef-a8e9-e6f8c1684a2c",
+        "name": "MEAN",
+        "serviceCreated": 1440055543000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Node.js"
+      },
+      {
+        "_id": "565418dd60292d0839b99f3e",
+        "guid": "8f5e4e82-a981-45df-aa9f-703386e4fc62",
+        "name": "Node.js Manual",
+        "serviceCreated": 1440679238000,
+        "serviceUpdated": 1448334718000,
+        "stack": "Node.js"
+      },
+      {
+        "_id": "565418dd60292d0839b99f42",
+        "guid": "efe75a09-f24c-49ec-befe-dba2f0e57522",
+        "name": "Node.js 实战",
+        "serviceCreated": 1418455577000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Node.js"
+      }
+    ]
+  },
+  {
+    "stack": null,
+    "book": {
+      "_id": "565418dd60292d0839b99f37",
+      "guid": "2266776f-0f16-428f-a47f-14a899c4e17f",
+      "name": "Git",
+      "serviceCreated": 1414899209000,
+      "serviceUpdated": 1448334719000,
+      "stack": null
+    }
+  },
+  {
+    "stack": null,
+    "book": {
+      "_id": "565418dd60292d0839b99f63",
+      "guid": "4d4d0a19-9a3f-44ee-8db2-2f8d7f228b29",
+      "name": "Good Blogs",
+      "serviceCreated": 1425690728000,
+      "serviceUpdated": 1448334719000,
+      "stack": null
+    }
+  },
+  {
+    "stack": "HTML5&CSS3",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f5a",
+        "guid": "1572b865-ce22-4132-ba50-46b4458305a7",
+        "name": "HTML5 APIs",
+        "serviceCreated": 1427762770000,
+        "serviceUpdated": 1448334717000,
+        "stack": "HTML5&CSS3"
+      },
+      {
+        "_id": "565418dd60292d0839b99f5f",
+        "guid": "66867b5f-cbf9-4c4f-9a82-c8f8897938c5",
+        "name": "HTML5秘籍（第2版）",
+        "serviceCreated": 1440810315000,
+        "serviceUpdated": 1448334718000,
+        "stack": "HTML5&CSS3"
+      },
+      {
+        "_id": "565418dd60292d0839b99f6b",
+        "guid": "0915acc8-d116-4e9c-bd52-aa0f48221030",
+        "name": "Sass与Compass实战",
+        "serviceCreated": 1445217795000,
+        "serviceUpdated": 1447908468000,
+        "stack": "HTML5&CSS3"
+      }
+    ]
+  },
+  {
+    "stack": "WebGL&Canvas",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f62",
+        "guid": "1e5c7dfd-af01-4997-9323-b84d75d952e9",
+        "name": "HTML5 Canvas 开发详解",
+        "serviceCreated": 1447908469000,
+        "serviceUpdated": 1447911725000,
+        "stack": "WebGL&Canvas"
+      },
+      {
+        "_id": "565418dd60292d0839b99f39",
+        "guid": "c8b96eeb-0e99-43e8-94b6-8129d818f63d",
+        "name": "webGl编程指南",
+        "serviceCreated": 1425821579000,
+        "serviceUpdated": 1448334717000,
+        "stack": "WebGL&Canvas"
+      }
+    ]
+  },
+  {
+    "stack": "HTTP",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f3a",
+        "guid": "4a658c85-5850-456a-89e2-7fadbf9f4c65",
+        "name": "HTTP权威指南",
+        "serviceCreated": 1429513093000,
+        "serviceUpdated": 1447906044000,
+        "stack": "HTTP"
+      },
+      {
+        "_id": "565418dd60292d0839b99f4b",
+        "guid": "7858f189-7144-4f37-93e0-dfe3ade7697a",
+        "name": "图解HTTP",
+        "serviceCreated": 1447906044000,
+        "serviceUpdated": 1447906044000,
+        "stack": "HTTP"
+      }
+    ]
+  },
+  {
+    "stack": null,
+    "book": {
+      "_id": "565418dd60292d0839b99f4c",
+      "guid": "0fbcb850-3b1c-4390-95fe-6c3b9ae8e496",
+      "name": "Javascript随记",
+      "serviceCreated": 1447908469000,
+      "serviceUpdated": 1448334716000,
+      "stack": null
+    }
+  },
+  {
+    "stack": "Linux",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f6a",
+        "guid": "37d89ac3-2bca-47eb-a592-8d0fad721a46",
+        "name": "Linux Docs",
+        "serviceCreated": 1441036252000,
+        "serviceUpdated": 1447907210000,
+        "stack": "Linux"
+      },
+      {
+        "_id": "565418dd60292d0839b99f4d",
+        "guid": "7720c246-7993-4228-82b5-f7109cf6ada9",
+        "name": "linux随记",
+        "serviceCreated": 1420166118000,
+        "serviceUpdated": 1447907209000,
+        "stack": "Linux"
+      },
+      {
+        "_id": "565418dd60292d0839b99f45",
+        "guid": "c0039158-66be-4e88-8fe4-d76f7797b7a4",
+        "name": "unix/linux系统管理技术手册",
+        "serviceCreated": 1430144050000,
+        "serviceUpdated": 1448334715000,
+        "stack": "Linux"
+      }
+    ]
+  },
+  {
+    "stack": null,
+    "book": {
+      "_id": "565418dd60292d0839b99f41",
+      "guid": "d5910b74-0a33-4014-acda-a7833a140d11",
+      "name": "Markdown&Evernote",
+      "serviceCreated": 1447908468000,
+      "serviceUpdated": 1447908470000,
+      "stack": null
+    }
+  },
+  {
+    "stack": "DB",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f49",
+        "guid": "758cad3f-7774-4c32-85ae-bc6e0c13a1c4",
+        "name": "MongoDB权威指南",
+        "serviceCreated": 1440682991000,
+        "serviceUpdated": 1448334719000,
+        "stack": "DB"
+      },
+      {
+        "_id": "565418dd60292d0839b99f57",
+        "guid": "752549b0-d482-4f63-a352-4261add714b8",
+        "name": "Redis",
+        "serviceCreated": 1447908469000,
+        "serviceUpdated": 1447908469000,
+        "stack": "DB"
+      }
+    ]
+  },
+  {
+    "stack": "Web性能篇",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f55",
+        "guid": "44118c33-1857-41d7-9d4e-43b890486380",
+        "name": "Web性能权威指南",
+        "serviceCreated": 1444898052000,
+        "serviceUpdated": 1447908704000,
+        "stack": "Web性能篇"
+      },
+      {
+        "_id": "565418dd60292d0839b99f51",
+        "guid": "d9c734f9-2eb7-4259-84c6-9497583405f8",
+        "name": "javascript性能篇",
+        "serviceCreated": 1436625296000,
+        "serviceUpdated": 1447908704000,
+        "stack": "Web性能篇"
+      },
+      {
+        "_id": "565418dd60292d0839b99f47",
+        "guid": "f2033d4c-3bd6-4850-9666-def4a3738ca2",
+        "name": "web性能篇",
+        "serviceCreated": 1437634745000,
+        "serviceUpdated": 1448334715000,
+        "stack": "Web性能篇"
+      }
+    ]
+  },
+  {
+    "stack": "jQuery",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f64",
+        "guid": "3c804df0-a615-4ada-a9ad-dbb9561fc707",
+        "name": "jQuery好文分享",
+        "serviceCreated": 1425735162000,
+        "serviceUpdated": 1447908468000,
+        "stack": "jQuery"
+      },
+      {
+        "_id": "565418dd60292d0839b99f54",
+        "guid": "f94aa15d-e337-487f-8210-2344d9bf7f38",
+        "name": "jQuery源码分析系列(1.7.1)",
+        "serviceCreated": 1440775885000,
+        "serviceUpdated": 1448334716000,
+        "stack": "jQuery"
+      }
+    ]
+  },
+  {
+    "stack": "Javascript Patterns",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f68",
+        "guid": "5b36c026-de30-4135-ab31-aea9a26e2829",
+        "name": "javascript Design Patterns",
+        "serviceCreated": 1438309445000,
+        "serviceUpdated": 1447920892000,
+        "stack": "Javascript Patterns"
+      },
+      {
+        "_id": "565418dd60292d0839b99f65",
+        "guid": "594da971-7ee7-4298-ab4f-19d6be173433",
+        "name": "javascript Patterns",
+        "serviceCreated": 1428365819000,
+        "serviceUpdated": 1447920892000,
+        "stack": "Javascript Patterns"
+      },
+      {
+        "_id": "565418dd60292d0839b99f4f",
+        "guid": "653e6fda-b6a8-4670-aaba-77086f14a53c",
+        "name": "javascript设计模式与开发实践",
+        "serviceCreated": 1427074583000,
+        "serviceUpdated": 1448334717000,
+        "stack": "Javascript Patterns"
+      }
+    ]
+  },
+  {
+    "stack": "Front-end Books",
+    "books": [
+      {
+        "_id": "565418dd60292d0839b99f46",
+        "guid": "198bcb22-4ab5-415f-88ed-54e8611cbb93",
+        "name": "javascript数据结构与算法",
+        "serviceCreated": 1435390127000,
+        "serviceUpdated": 1448334717000,
+        "stack": "Front-end Books"
+      },
+      {
+        "_id": "565418dd60292d0839b99f59",
+        "guid": "5752acbd-db50-4224-a2af-fda1e08a9c4a",
+        "name": "javascript框架设计",
+        "serviceCreated": 1425735162000,
+        "serviceUpdated": 1447905876000,
+        "stack": "Front-end Books"
+      },
+      {
+        "_id": "565418dd60292d0839b99f40",
+        "guid": "9ceea82a-17c3-437a-8ef4-200c508fc550",
+        "name": "javascript算法与数据结构",
+        "serviceCreated": 1447161024000,
+        "serviceUpdated": 1447905877000,
+        "stack": "Front-end Books"
+      },
+      {
+        "_id": "565418dd60292d0839b99f3d",
+        "guid": "bb3bc1aa-879e-475f-a5b2-2d248b279f08",
+        "name": "你不知道javascript（上卷）",
+        "serviceCreated": 1438330830000,
+        "serviceUpdated": 1448334719000,
+        "stack": "Front-end Books"
+      },
+      {
+        "_id": "565418dd60292d0839b99f48",
+        "guid": "4209e972-c74b-4e9f-b53b-a564ea98d6a5",
+        "name": "基于MVC的javascript web富应用开发",
+        "serviceCreated": 1438443372000,
+        "serviceUpdated": 1448334716000,
+        "stack": "Front-end Books"
+      },
+      {
+        "_id": "565418dd60292d0839b99f60",
+        "guid": "f8f635ab-d393-433f-ba2c-0a2c4f43049e",
+        "name": "深入理解bootstrap",
+        "serviceCreated": 1445065985000,
+        "serviceUpdated": 1448334715000,
+        "stack": "Front-end Books"
+      }
+    ]
+  }
+]

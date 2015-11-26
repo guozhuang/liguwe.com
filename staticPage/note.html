@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/note.css"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/note.js"></script>
+</head>
+<body>
+
+
+
+
+    <div class="editCon" draggable="true">
+        <div class="fontFamily unfold">
+            <a class="fa fa-font">&nbsp</a>
+            <a class="fa fa-angle-down"></a>
+            <div class="selectFontFamily notColor">
+                <a class="song" href="">宋体</a>
+                <a class="kaiti" href="">楷体</a>
+                <a class="kaiti" href="">楷体</a>
+                <a class="kaiti" href="">楷体</a>
+            </div>
+        </div>
+        <div class="fontSize unfold">
+            <a class="fa fa-text-height">&nbsp</a>
+            <a class="fa fa fa-angle-down"></a>
+            <div class="seleteFontSize notColor">
+                <a href="">10</a>
+                <a href="">12</a>
+                <a href="">14</a>
+            </div>
+        </div>
+
+        <div class="fontColor unfold">
+            <a class="fa fa-pencil">&nbsp</a>
+            <a class="fa fa fa-angle-down"></a>
+            <div class="seleteFontColor color">
+                <a href="" class="black"></a>
+                <a href="" class="red"></a>
+                <a href="" class="pink"></a>
+                <a href="" class="blue"></a>
+                <a href="" class="green"></a>
+            </div>
+        </div>
+
+        <div class="backgroundColor unfold">
+            <a class="fa fa-paint-brush">&nbsp</a>
+            <a class="fa fa fa-angle-down"></a>
+            <div class="seleteBackgroundColor color">
+                <a href="" class="black"></a>
+                <a href="" class="red"></a>
+                <a href="" class="pink"></a>
+                <a href="" class="blue"></a>
+                <a href="" class="green"></a>
+            </div>
+        </div>
+
+        <div class="bold">
+            <a class="fa fa-bold"></a>
+        </div>
+        <div class="italic">
+            <a class="fa fa-italic"></a>
+        </div>
+        <div class="underline">
+            <a class="fa fa-underline"></a>
+        </div>
+        <div class="strikethrough">
+            <a class="fa fa-strikethrough"></a>
+        </div>
+        <div class="insertHr">
+            <a class="fa fa-minus"></a>
+        </div>
+        <div class="align">
+            <a class="fa fa-align-left"></a>
+        </div>
+        <div class="alignCenter">
+            <a class="fa fa-align-center"></a>
+        </div>
+        <div class="alignRight">
+            <a class="fa fa-align-right"></a>
+        </div>
+        <div class="dedent">
+            <a class="fa fa-dedent"></a>
+        </div>
+        <div class="indent">
+            <a class="fa fa-indent"></a>
+        </div>
+        <div class="insertOl">
+            <a class="fa fa-list-ol"></a>
+        </div>
+        <div class="insertUl">
+            <a class="fa fa-list-ul"></a>
+        </div>
+        <div class="insertRadio">
+            <a class="fa fa-check-square-o"></a>
+        </div>
+        <div class="insertImg">
+            <a class="fa fa-picture-o"></a>
+        </div>
+        <div class="insertTable">
+            <a class="fa fa-table"></a>
+        </div>
+        <div class="insertcode unfold">
+            <a class="fa fa-file-code-o"></a>
+            <a class="fa fa fa-angle-down"></a>
+            <div class="seleteCodeType notColor">
+                <a href="" class="js">js</a>
+                <a  href="" class="css">css</a>
+                <a  href="" class="html">html</a>
+            </div>
+        </div>
+        <div class="createLink">
+            <a class="fa fa-link"></a>
+        </div>
+        <div class="addAnchor">
+            <a class="fa fa-hand-o-right"></a>
+        </div>
+        <div class="uploadFile">
+            <a class="fa fa-paperclip"></a>
+        </div>
+        <div class="save">
+            <a class="fa fa-save"></a>
+        </div>
+    </div>
+
+
+<nav id="booksAndNotes" class="fl">
+    <div class="searchAndAdd">
+        <div class="icons">
+            <a href="" class="fa fa-book"> books</a>
+            <a href="" class="fa fa-file-text"> notes</a>
+            <!--<aside id="editStatus hide">-->
+                <!--<a href="" class="fa fa-align-justify"></a>-->
+                <!--<a href="" class="fa fa-edit"></a>-->
+                <!--<a href="http://liguwe.com" class="fa fa-home"></a>-->
+                <!--&lt;!&ndash;<a href="" class="fa fa-pencil"></a>&ndash;&gt;-->
+                <!--<a href="" class="fa fa-arrows-alt"></a>-->
+                <!--<a href="" class="fa fa fa-user"></a>-->
+                <!--<a href="" class="fa fa-info-circle"></a>-->
+            <!--</aside>-->
+        </div>
+        <div class="inputText">
+            <input type="text"/>
+            <div class="defaultSearch">
+                <i class="fa fa-search searchBooks">&nbsp;&nbsp;search books</i>
+                <i class="fa fa-search hide searchNotes">&nbsp;&nbsp;search notes</i>
+            </div>
+        </div>
+    </div>
+    <div class="bookList hide">
+        <ul>
+            <li>
+                <a class="bookTitle" href="" title="">chapter 1</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+            <li>
+                <a class="bookTitle" href="" title="">Unix/Linux</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+
+            <li>
+                <a class="bookTitle" href="" title="">手术手册</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+            <li>
+                <a class="bookTitle" href="" title="">Unix/Linux管术手册</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="noteList">
+        <ul>
+            <li>
+                <a class="noteTitle" href="" title="">bookTitlebookTitle 1</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+            <li>
+                <a class="noteTitle" href="" title="">bookTitle/Linux</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+
+            <li>
+                <a class="noteTitle" href="" title="">手术bookTitle手册</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+            <li>
+                <a class="noteTitle" href="" title="">Unix/Linux管术手册</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<nav id="notes" class="fl hide">
+    <div class="searchAndAdd">
+        <div class="icons">
+            <a href="" class="fa fa-book"></a>
+            <a href="" class="fa fa-file-text"></a>
+            <a href="" class="fa fa-search"></a>
+            <a href="" class="fa fa-plus"></a>
+        </div>
+        <div class="inputText">
+            <input type="text" name=""/>
+            <div class="defaultSearch default">search notes</div>
+            <div class="defaultAdd hide">add notes</div>
+        </div>
+    </div>
+    <div class="noteList">
+        <ul>
+            <li>
+                <a class="noteTitle" href="" title="">Unix/Linux管理技术手术手册第一章</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+            <li>
+                <a class="noteTitle" href="">http第一章</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+            <li>
+                <a class="noteTitle" href="">nodejs第一章</a>
+                <a class="edit fa fa-edit"></a>
+                <a class="delete fa fa-trash-o"></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<article id="articles" class="fl">
+        <div id="editcontent" contenteditable>
+            成立
+
+            亚马逊公司是在1995年7月16日由杰夫·贝佐斯（[1] Jeff Bezos）成立的，一开始叫Cadabra。性质是基本的网络书店。然而具有远见的贝佐斯看到了网络的潜力和特色，当实体的大型书店提供20万本书时，网络书店能够提供比20万本书更多的选择给读者。
+            因此贝佐斯将Cadabra以地球上孕育
+            Amazon
+            Amazon
+            最多种生物的亚马逊河重新命 名，于1995年7月重新开张。该公司原于1994年在华盛顿州登记，1996年时改到德拉瓦州登记，并在1997年5月15日时股票上市。代码是AMZN，一股为18美元（截止2012年10月12日收市，股价为242.36美元）。
+            亚马逊公司的最初计划原本是在4到5年之后开始有营利，2000年的网络泡沫造成了亚马逊公司平稳成长的风格成为独树一帜的佳话，在1990年代有相当多网络公司快速成长，当时亚马逊公司的股东不停抱怨贝佐斯的经营策略太过保守和缓慢，而网络泡沫时候，那些快速成长的网络公司纷纷结束营业，只有亚马逊还有获利，2002年的第四季，亚马逊的纯利约有500万美金。2004年则成长到3亿多美金。
+            现状
+
+            DVD，图书，
+            亚马逊的发展
+            亚马逊的发展(3张)
+            软件，家电，厨房项目，工具，草坪和庭院项目，玩具，服装，体育用品，鲜美食品，首饰，手表，健康和个人关心项目，美容品，乐器等等应有尽有。
+            在2004年1月，亚马逊更推出总统候选人特别活动，鼓励顾客捐赠从5到200美元给他们心目中理想的美国总统候选人，做为竞选活动经费。1999年贝佐斯因经营策略得法、成为了时代杂志的年度人物。
+            2009年7月8日，亚马逊官方网站曾被封锁。政府没有对封锁给出任何理由说明。如今可登录 ，亚马逊旗下网站IMDb如今可以登录。
+            title
+            title
+            亚马逊公司是在1995年7月16日由杰夫·贝佐斯（[1] Jeff Bezos）成立的，一开始叫Cadabra。性质是基本的网络书店。然而具有远见的贝佐斯看到了网络的潜力和特色，当实体的大型书店提供20万本书时，网络书店能够提供比20万本书更多的选择给读者。
+            因此贝佐斯将Cadabra以地球上孕育
+            Amazon
+            Amazon
+            最多种生物的亚马逊河重新命 名，于1995年7月重新开张。该公司原于1994年在华盛顿州登记，1996年时改到德拉瓦州登记，并在1997年5月15日时股票上市。代码是AMZN，一股为18美元（截止2012年10月12日收市，股价为242.36美元）。
+            亚马逊公司的最初计划原本是在4到5年之后开始有营利，2000年的网络泡沫造成了亚马逊公司平稳成长的风格成为独树一帜的佳话，在1990年代有相当多网络公司快速成长，当时亚马逊公司的股东不停抱怨贝佐斯的经营策略太过保守和缓慢，而网络泡沫时候，那些快速成长的网络公司纷纷结束营业，只有亚马逊还有获利，2002年的第四季，亚马逊的纯利约有500万美金。2004年则成长到3亿多美金。
+            现状
+
+            DVD，图书，
+            亚马逊的发展
+            亚马逊的发展(3张)
+            软件，家电，厨房项目，工具，草坪和庭院项目，玩具，服装，体育用品，鲜美食品，首饰，手表，健康和个人关心项目，美容品，乐器等等应有尽有。
+            在2004年1月，亚马逊更推出总统候选人特别活动，鼓励顾客捐赠从5到200美元给他们心目中理想的美国总统候选人，做为竞选活动经费。1999年贝佐斯因经营策略得法、成为了时代杂志的年度人物。
+            2009年7月8日，亚马逊官方网站曾被封锁。政府没有对封锁给出任何理由说明。如今可登录 ，亚马逊旗下网站IMDb如今可以登录。
+            title
+            title
+            亚马逊公司是在1995年7月16日由杰夫·贝佐斯（[1] Jeff Bezos）成立的，一开始叫Cadabra。性质是基本的网络书店。然而具有远见的贝佐斯看到了网络的潜力和特色，当实体的大型书店提供20万本书时，网络书店能够提供比20万本书更多的选择给读者。
+            因此贝佐斯将Cadabra以地球上孕育
+            Amazon
+            Amazon
+            最多种生物的亚马逊河重新命 名，于1995年7月重新开张。该公司原于1994年在华盛顿州登记，1996年时改到德拉瓦州登记，并在1997年5月15日时股票上市。代码是AMZN，一股为18美元（截止2012年10月12日收市，股价为242.36美元）。
+            亚马逊公司的最初计划原本是在4到5年之后开始有营利，2000年的网络泡沫造成了亚马逊公司平稳成长的风格成为独树一帜的佳话，在1990年代有相当多网络公司快速成长，当时亚马逊公司的股东不停抱怨贝佐斯的经营策略太过保守和缓慢，而网络泡沫时候，那些快速成长的网络公司纷纷结束营业，只有亚马逊还有获利，2002年的第四季，亚马逊的纯利约有500万美金。2004年则成长到3亿多美金。
+            现状
+
+            DVD，图书，
+            亚马逊的发展
+            亚马逊的发展(3张)
+            软件，家电，厨房项目，工具，草坪和庭院项目，玩具，服装，体育用品，鲜美食品，首饰，手表，健康和个人关心项目，美容品，乐器等等应有尽有。
+            在2004年1月，亚马逊更推出总统候选人特别活动，鼓励顾客捐赠从5到200美元给他们心目中理想的美国总统候选人，做为竞选活动经费。1999年贝佐斯因经营策略得法、成为了时代杂志的年度人物。
+            2009年7月8日，亚马逊官方网站曾被封锁。政府没有对封锁给出任何理由说明。如今可登录 ，亚马逊旗下网站IMDb如今可以登录。
+            title
+            title
+            亚马逊公司是在1995年7月16日由杰夫·贝佐斯（[1] Jeff Bezos）成立的，一开始叫Cadabra。性质是基本的网络书店。然而具有远见的贝佐斯看到了网络的潜力和特色，当实体的大型书店提供20万本书时，网络书店能够提供比20万本书更多的选择给读者。
+            因此贝佐斯将Cadabra以地球上孕育
+            Amazon
+            Amazon
+            最多种生物的亚马逊河重新命 名，于1995年7月重新开张。该公司原于1994年在华盛顿州登记，1996年时改到德拉瓦州登记，并在1997年5月15日时股票上市。代码是AMZN，一股为18美元（截止2012年10月12日收市，股价为242.36美元）。
+            亚马逊公司的最初计划原本是在4到5年之后开始有营利，2000年的网络泡沫造成了亚马逊公司平稳成长的风格成为独树一帜的佳话，在1990年代有相当多网络公司快速成长，当时亚马逊公司的股东不停抱怨贝佐斯的经营策略太过保守和缓慢，而网络泡沫时候，那些快速成长的网络公司纷纷结束营业，只有亚马逊还有获利，2002年的第四季，亚马逊的纯利约有500万美金。2004年则成长到3亿多美金。
+            现状
+
+            DVD，图书，
+            亚马逊的发展
+            亚马逊的发展(3张)
+            软件，家电，厨房项目，工具，草坪和庭院项目，玩具，服装，体育用品，鲜美食品，首饰，手表，健康和个人关心项目，美容品，乐器等等应有尽有。
+            在2004年1月，亚马逊更推出总统候选人特别活动，鼓励顾客捐赠从5到200美元给他们心目中理想的美国总统候选人，做为竞选活动经费。1999年贝佐斯因经营策略得法、成为了时代杂志的年度人物。
+            2009年7月8日，亚马逊官方网站曾被封锁。政府没有对封锁给出任何理由说明。如今可登录 ，亚马逊旗下网站IMDb如今可以登录。
+            title
+            title
+            亚马逊公司是在1995年7月16日由杰夫·贝佐斯（[1] Jeff Bezos）成立的，一开始叫Cadabra。性质是基本的网络书店。然而具有远见的贝佐斯看到了网络的潜力和特色，当实体的大型书店提供20万本书时，网络书店能够提供比20万本书更多的选择给读者。
+            因此贝佐斯将Cadabra以地球上孕育
+            Amazon
+            Amazon
+            最多种生物的亚马逊河重新命 名，于1995年7月重新开张。该公司原于1994年在华盛顿州登记，1996年时改到德拉瓦州登记，并在1997年5月15日时股票上市。代码是AMZN，一股为18美元（截止2012年10月12日收市，股价为242.36美元）。
+            亚马逊公司的最初计划原本是在4到5年之后开始有营利，2000年的网络泡沫造成了亚马逊公司平稳成长的风格成为独树一帜的佳话，在1990年代有相当多网络公司快速成长，当时亚马逊公司的股东不停抱怨贝佐斯的经营策略太过保守和缓慢，而网络泡沫时候，那些快速成长的网络公司纷纷结束营业，只有亚马逊还有获利，2002年的第四季，亚马逊的纯利约有500万美金。2004年则成长到3亿多美金。
+            现状
+
+            DVD，图书，
+            亚马逊的发展
+            亚马逊的发展(3张)
+            软件，家电，厨房项目，工具，草坪和庭院项目，玩具，服装，体育用品，鲜美食品，首饰，手表，健康和个人关心项目，美容品，乐器等等应有尽有。
+            在2004年1月，亚马逊更推出总统候选人特别活动，鼓励顾客捐赠从5到200美元给他们心目中理想的美国总统候选人，做为竞选活动经费。1999年贝佐斯因经营策略得法、成为了时代杂志的年度人物。
+            2009年7月8日，亚马逊官方网站曾被封锁。政府没有对封锁给出任何理由说明。如今可登录 ，亚马逊旗下网站IMDb如今可以登录。
+            title
+            title
+            亚马逊公司是在1995年7月16日由杰夫·贝佐斯（[1] Jeff Bezos）成立的，一开始叫Cadabra。性质是基本的网络书店。然而具有远见的贝佐斯看到了网络的潜力和特色，当实体的大型书店提供20万本书时，网络书店能够提供比20万本书更多的选择给读者。
+            因此贝佐斯将Cadabra以地球上孕育
+            Amazon
+            Amazon
+            最多种生物的亚马逊河重新命 名，于1995年7月重新开张。该公司原于1994年在华盛顿州登记，1996年时改到德拉瓦州登记，并在1997年5月15日时股票上市。代码是AMZN，一股为18美元（截止2012年10月12日收市，股价为242.36美元）。
+            亚马逊公司的最初计划原本是在4到5年之后开始有营利，2000年的网络泡沫造成了亚马逊公司平稳成长的风格成为独树一帜的佳话，在1990年代有相当多网络公司快速成长，当时亚马逊公司的股东不停抱怨贝佐斯的经营策略太过保守和缓慢，而网络泡沫时候，那些快速成长的网络公司纷纷结束营业，只有亚马逊还有获利，2002年的第四季，亚马逊的纯利约有500万美金。2004年则成长到3亿多美金。
+            现状
+
+            DVD，图书，
+            亚马逊的发展
+            亚马逊的发展(3张)
+            软件，家电，厨房项目，工具，草坪和庭院项目，玩具，服装，体育用品，鲜美食品，首饰，手表，健康和个人关心项目，美容品，乐器等等应有尽有。
+            在2004年1月，亚马逊更推出总统候选人特别活动，鼓励顾客捐赠从5到200美元给他们心目中理想的美国总统候选人，做为竞选活动经费。1999年贝佐斯因经营策略得法、成为了时代杂志的年度人物。
+            2009年7月8日，亚马逊官方网站曾被封锁。政府没有对封锁给出任何理由说明。如今可登录 ，亚马逊旗下网站IMDb如今可以登录。
+            title
+            title
+            2010年3月15日，已拥有23大类、超过120万种商品的网上商城卓越亚马逊发布了“网络购物诚信声明白皮书”，主要就消费者网购普遍关心的“正品”和“退换”问题，针对售前和售后的诚信保证做出具体阐释。 卓越亚马逊认为，网购诚信主要分为“售前诚信”和“售后诚信”。售前诚信指消费者对于网络商城品牌的信任度以及每件商品是否是“正品”。
+            对此，卓越亚马逊对消费者推出了“天天低价、正品保证”的承诺。卓越亚马逊总裁王汉华解释说：“作为全球商品品种最多的网上零售商亚马逊在中国的站点，卓越亚马逊在软件数码、家电3C、玩具礼品等各类商品都有正品保证。”
+            亚马逊中国发展迅速，每年都保持了高速增长，用户数量也大幅增加。已拥有28大类，近600万种的产品。
+            2012年9月6日，亚马逊在发布会上发布了新款Kindle Fire平板电脑，以及带屏幕背光功能的Kindle Paperwhite电子阅读器。
+            2013年3月18日，亚马逊已经制作了一系列大预算的电视剧集，这些剧集仅可通过互联网观看，原因是这家公司正在与Netflix展开“战争”，竞相利用人们对于在智能手机、平板电脑和互联网电视上观看电视节目的兴趣，以扩大自身在流媒体播放服务这一领域中的占有率。
+            由于亚马逊提供的亚马逊云服务在2013年来的出色表现，著名IT开发杂志SD Times将其评选为2013 SD Times 100，位于“API、库和框架”分类排名的第二名，“云方面”分类排名第一名，“极大影响力”分类排名第一名！
+            2014年5月5日，推特与亚马逊联手，开放用户从旗下微网志服务的推文直接购物，以增加电子商务的方式保持会员黏著度。[2]
+            2014年8月13日，亚马逊推出了自己的信用卡刷卡器Amazon Local Register，进一步向线下市场扩张。[3]
+            2015年1月20日，亚马逊旗下电影工作室将要开始拍电影。这些电影将首先在电影院上映，然后才在亚马逊Prime视频流服务上看到。[4]
+            2015年3月6日下午，亚马逊中国（Z.cn）宣布开始在天猫试运营“amazon官方旗舰店”，计划于2015年4月正式上线。该旗舰店首期将主推备受消费者欢迎的亚马逊中国极具特色的“进口直采”商品，包括鞋靴、食品、酒水、厨具、玩具等多种品类。[5]
+            收购
+
+            1998年4月，亚马逊收购了IMDb（互联网电影资料库公司）；
+            1998年8月，亚马逊以1.86亿美元收购Junglee（数据挖掘公司）；
+            1998年8月，亚马逊以9300万美元收购Planetall（社交网络公司）；
+            1999年6月，亚马逊以2.5亿美元收购了Alexa；
+            2003年4月，亚马逊收购了其在线音乐商店的竞争对手en：CD Now；
+            2004年8月，亚马逊以7500万美元收购了中国的卓越网（卓越当时是一家网上书店）；
+            2005年7月，亚马逊收购了CustomFlix（DVD制作商）；
+            2006年2月，亚马逊收购了Shopbop（女性时尚购物网站）；
+            2007年5月，亚马逊收购了Dpreview（数码相机测评网站）；
+            2008年3月，亚马逊以3亿美元收购了Audible（有声读物网站）；
+            2009年7月，亚马逊以12亿收购了Zappos（在线鞋店）；
+            2010年6月，亚马逊以1.1亿美元收购了Woot（团购网站）；
+            2010年10月，亚马逊称其将收购欧洲在线购物服务网站BuyVIP. com以扩大在这个地区的市场份额。这笔收购交易的金融条款没有披露。亚马逊负责欧洲零售的副总裁Greg Greeley说，收BuyVIP. com对于亚马逊欧洲业务是一个极好的补充，为亚马逊客户寻找和发现独特的和诱人的产品提供了另一个独特的途径。
+            2010年11月，亚马逊以5.5亿美元收购了Quidsi；
+            2011年7月，亚马逊收购了The Book Depository（网上书店）；
+            2011年，亚马逊还收购了 Lovefilm，Pushbutton；
+            2012年3月，亚马逊收购了自动化机器人公司 Kiva Systems。
+            2013年3月，亚马逊在欧洲超越了当地其他在线零售商，成为欧洲最受欢迎、访问量最大的网络零售商。
+            2014年4月11日，亚马逊收购数字漫画公司comiXology。[6]
+            2014年5月16日，亚马逊宣布2000万美元投资入股上海美味七七，开启中国市场的生鲜战略部署。
+            2014年8月26日，亚马逊宣布以9.7亿美元的现金收购视频游戏流媒体服务Twitch。[7]
+
+    </div>
+
+</article>
+</body>
+</html>
